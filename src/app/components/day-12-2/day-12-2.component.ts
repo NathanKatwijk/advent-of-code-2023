@@ -40,10 +40,10 @@ export class Day122Component extends DayComponent implements OnInit {
     const springRows = this.retrieveSpringRows(splittedStringList);
     // console.log('springRows', springRows);
 
-    this.result = this.determinePossibleArrangements(springRows);
+    this.result = -1; // this.determinePossibleArrangements(springRows);
 
-    console.log('=====');
-    console.log(`Day 12.2 result: ${this.result}`);
+    // console.log('=====');
+    // console.log(`Day 12.2 result: ${this.result}`);
   }
 
   retrieveSpringRows(springInput: string[]): SpringRow[] {
@@ -64,13 +64,13 @@ export class Day122Component extends DayComponent implements OnInit {
     let possibleArrangements = 0;
 
     springRows.forEach((springRow: SpringRow, springRowIndex: number) => {
-      console.log('');
-      console.log(`[${springRowIndex}]`);
-      console.log('  > input conditions string', springRow.conditionsString);
+      // console.log('');
+      // console.log(`[${springRowIndex}]`);
+      // console.log('  > input conditions string', springRow.conditionsString);
 
       const arrangements = this.getAmountOfMatchingArrangements(springRow.conditionsString, springRow.damagedSprings);
 
-      console.log(`[${springRowIndex}] amountOfMatchingArrangements: `, arrangements);
+      // console.log(`[${springRowIndex}] amountOfMatchingArrangements: `, arrangements);
       possibleArrangements = possibleArrangements + arrangements;
     });
 
@@ -130,7 +130,7 @@ export class Day122Component extends DayComponent implements OnInit {
     // const conditionsStringOutfolded = Array(this.MULTIPLYING_FACTOR).fill(conditionsString).join('?');
     // TODO
     const inputStrings = this.generateInputs(conditionsString);
-    console.log('  > inputStrings', inputStrings);
+    // console.log('  > inputStrings', inputStrings);
     // const inputStringsOutfolded = this.generateInputsOutfolded(conditionsString);
     // console.log('  > inputStringsOutfolded', inputStringsOutfolded);
 
@@ -188,7 +188,7 @@ export class Day122Component extends DayComponent implements OnInit {
   }
 
   generateInputsOutfolded(conditionsString: string): string[] {
-    console.log('conditionsString', conditionsString);
+    // console.log('conditionsString', conditionsString);
     const inputs: string[] = [];
 
     populateArray(conditionsString.length, "");
@@ -196,10 +196,10 @@ export class Day122Component extends DayComponent implements OnInit {
     function populateArray(conditionsStringLength: number, str: string) {
       const currentStringLength = str.length;
       if (currentStringLength === conditionsStringLength) {
-        console.log('return value', str);
+        // console.log('return value', str);
         inputs.push(str);
       } else {
-        console.log({ str, currentStringLength});
+        // console.log({ str, currentStringLength});
         populateArray(conditionsStringLength, str + ".");
         populateArray(conditionsStringLength, str + "#");
       }
@@ -209,6 +209,6 @@ export class Day122Component extends DayComponent implements OnInit {
   }
 }
 
-    // const inputStrings = this.generateInputsOutfolded(50);
-    // console.log('inputStrings length', inputStrings.length);
-    // console.log('inputStrings', inputStrings);
+// const inputStrings = this.generateInputsOutfolded(50);
+// console.log('inputStrings length', inputStrings.length);
+// console.log('inputStrings', inputStrings);

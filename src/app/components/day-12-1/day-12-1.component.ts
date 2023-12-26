@@ -40,8 +40,8 @@ export class Day121Component extends DayComponent implements OnInit {
 
     this.result = this.determinePossibleArrangements(springRows);
 
-    console.log('=====');
-    console.log(`Day 12.1 result: ${this.result}`);
+    // console.log('=====');
+    // console.log(`Day 12.1 result: ${this.result}`);
   }
 
   retrieveSpringRows(springInput: string[]): SpringRow[] {
