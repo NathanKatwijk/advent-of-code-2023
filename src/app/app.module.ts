@@ -30,6 +30,8 @@ import { Day111Component } from './components/day-11-1/day-11-1.component';
 import { Day112Component } from './components/day-11-2/day-11-2.component';
 import { Day121Component } from './components/day-12-1/day-12-1.component';
 import { Day122Component } from './components/day-12-2/day-12-2.component';
+import { Day131Component } from './components/day-13-1/day-13-1.component';
+import { Day132Component } from './components/day-13-2/day-13-2.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,8 @@ import { Day122Component } from './components/day-12-2/day-12-2.component';
     Day112Component,
     Day121Component,
     Day122Component,
+    Day131Component,
+    Day132Component,
   ],
   imports: [
     BrowserModule,

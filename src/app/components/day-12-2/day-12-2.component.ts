@@ -128,7 +128,6 @@ export class Day122Component extends DayComponent implements OnInit {
     const matches: string[] = [];
 
     // const conditionsStringOutfolded = Array(this.MULTIPLYING_FACTOR).fill(conditionsString).join('?');
-    // TODO
     const inputStrings = this.generateInputs(conditionsString);
     // console.log('  > inputStrings', inputStrings);
     // const inputStringsOutfolded = this.generateInputsOutfolded(conditionsString);
