@@ -132,7 +132,7 @@ export class Day121Component extends DayComponent implements OnInit {
 
     populateArray(matchString.length, "");
 
-    function populateArray(n: number, str: string) {
+    function populateArray(n: number, str: string): void {
       if (str.length === n) {
         inputs.push(str);
       } else {
