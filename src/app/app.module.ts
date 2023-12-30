@@ -40,6 +40,7 @@ import { Day161Component } from './components/day-16-1/day-16-1.component';
 import { Day162Component } from './components/day-16-2/day-16-2.component';
 import { Day171Component } from './components/day-17-1/day-17-1.component';
 import { Day1712Component } from './components/day-17-1-2/day-17-1-2.component';
+import { Day172Component } from './components/day-17-2/day-17-2.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { Day1712Component } from './components/day-17-1-2/day-17-1-2.component';
     Day162Component,
     Day171Component,
     Day1712Component,
+    Day172Component,
   ],
   imports: [
     BrowserModule,
